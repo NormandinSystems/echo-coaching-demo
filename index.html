@@ -75,7 +75,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="relative bg-echoGreen h-screen flex items-center justify-center text-center px-4" style="background: linear-gradient(rgba(0, 56, 34, 0.9), rgba(0, 56, 34, 0.8)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); background-size: cover; background-position: center;">
+    <header id="home" class="relative bg-echoGreen h-screen flex items-center justify-center text-center px-4" style="background: linear-gradient(rgba(0, 56, 34, 0.9), rgba(0, 56, 34, 0.8)), url('hero.avif'); background-size: cover; background-position: center;">
         <div class="max-w-4xl mx-auto text-white pt-16">
             <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Unlock Your Full Potential</h1>
             <p class="text-lg md:text-xl mb-10 text-gray-200 font-light">
@@ -260,7 +260,12 @@
             
             <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-blur-sm shadow-xl">
                 <h3 class="text-xl font-bold mb-6">Send a Message</h3>
-                <form action="mailto:christine@echocoaching.ca" method="post" enctype="text/plain" class="flex flex-col gap-4">
+                
+                <!-- Netlify Form Setup -->
+                <form name="contact" method="POST" data-netlify="true" class="flex flex-col gap-4">
+                    <!-- Hidden input required for Netlify to identify the form -->
+                    <input type="hidden" name="form-name" value="contact" />
+                    
                     <div>
                         <label class="block text-sm font-medium mb-1 opacity-90">Name</label>
                         <input type="text" name="name" placeholder="Jane Doe" class="w-full p-3 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-echoYellow bg-white" required>
