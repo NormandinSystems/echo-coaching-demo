@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echo Coaching | Personalized Coaching Solutions</title>
+    <title>Echo Coaching | Change How You Lead</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Poppins -->
@@ -42,23 +42,23 @@
             <div class="flex justify-between h-20 items-center">
                 <!-- Logo Area -->
                 <div class="flex-shrink-0 flex items-center">
-                    <!-- Logo Image as Home Button -->
                     <a href="#home" class="cursor-pointer">
                         <img src="logo.png" alt="Echo Coaching" class="h-12 w-auto hover:opacity-80 transition duration-300">
                     </a>
                 </div>
                 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#about" class="hover:text-echoYellow transition duration-300">About</a>
+                <div class="hidden lg:flex space-x-6 items-center text-sm font-medium">
+                    <a href="#about-echo" class="hover:text-echoYellow transition duration-300">About</a>
                     <a href="#services" class="hover:text-echoYellow transition duration-300">Services</a>
+                    <a href="#why-echo" class="hover:text-echoYellow transition duration-300">Why Echo</a>
+                    <a href="#christine" class="hover:text-echoYellow transition duration-300">Christine</a>
                     <a href="#credentials" class="hover:text-echoYellow transition duration-300">Credentials</a>
-                    <a href="#quiz" class="hover:text-echoYellow transition duration-300">Leadership Quiz</a>
-                    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3tBNETv7F7pm-2UKInEOM5-cAtJJyBf76xtgJR4RB642v_u9b7PqlX3wvotH3nKoMl8W6Mtns8" target="_blank" class="bg-echoOrange hover:bg-echoTerracotta text-white px-5 py-2 rounded-full font-medium transition duration-300 shadow-md">Book Discovery Call</a>
+                    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3tBNETv7F7pm-2UKInEOM5-cAtJJyBf76xtgJR4RB642v_u9b7PqlX3wvotH3nKoMl8W6Mtns8" target="_blank" class="bg-echoOrange hover:bg-echoTerracotta text-white px-5 py-2 rounded-full transition duration-300 shadow-md">Book Discovery Call</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <div class="md:hidden flex items-center">
+                <div class="lg:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-white hover:text-echoYellow focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
@@ -66,182 +66,324 @@
             </div>
         </div>
         <!-- Mobile Menu (Hidden by default) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-echoGreen pb-4 px-4">
-            <a href="#about" class="block py-2 hover:text-echoYellow">About</a>
+        <div id="mobile-menu" class="hidden lg:hidden bg-echoGreen pb-4 px-4">
+            <a href="#about-echo" class="block py-2 hover:text-echoYellow">About</a>
             <a href="#services" class="block py-2 hover:text-echoYellow">Services</a>
+            <a href="#christine" class="block py-2 hover:text-echoYellow">Meet Christine</a>
             <a href="#credentials" class="block py-2 hover:text-echoYellow">Credentials</a>
             <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3tBNETv7F7pm-2UKInEOM5-cAtJJyBf76xtgJR4RB642v_u9b7PqlX3wvotH3nKoMl8W6Mtns8" target="_blank" class="block py-2 mt-2 bg-echoOrange text-center rounded text-white">Book Call</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="home" class="relative bg-echoGreen h-screen flex items-center justify-center text-center px-4" style="background: linear-gradient(rgba(0, 56, 34, 0.9), rgba(0, 56, 34, 0.8)), url('hero.avif'); background-size: cover; background-position: center;">
+    <!-- SECTION 1: Welcome Banner -->
+    <header id="home" class="relative bg-echoGreen h-screen flex items-center justify-center text-center px-4" style="background: linear-gradient(rgba(0, 56, 34, 0.85), rgba(0, 56, 34, 0.75)), url('Welcome Banner.png'); background-size: cover; background-position: center;">
         <div class="max-w-4xl mx-auto text-white pt-16">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Unlock Your Full Potential</h1>
-            <p class="text-lg md:text-xl mb-10 text-gray-200 font-light">
-                Tailored coaching for executives, managers, and individuals. 
-                Empathy, authenticity, and human connections driving success.
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Change how you lead</h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-100 font-light tracking-wide">
+                Because leadership is not a title. It’s a practice.
             </p>
             <div class="flex flex-col md:flex-row justify-center gap-4">
                 <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3tBNETv7F7pm-2UKInEOM5-cAtJJyBf76xtgJR4RB642v_u9b7PqlX3wvotH3nKoMl8W6Mtns8" target="_blank" class="bg-echoOrange hover:bg-echoTerracotta text-white text-lg px-8 py-3 rounded-full font-semibold transition duration-300 shadow-lg transform hover:-translate-y-1">
                     Book Discovery Call
                 </a>
-                <a href="#about" class="border-2 border-white hover:bg-white hover:text-echoGreen text-white text-lg px-8 py-3 rounded-full font-semibold transition duration-300">
+                <a href="#about-echo" class="border-2 border-white hover:bg-white hover:text-echoGreen text-white text-lg px-8 py-3 rounded-full font-semibold transition duration-300">
                     Learn More
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
+    <!-- SECTION 2: Values -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-echoGreen uppercase tracking-wider">Our Values</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Value 1 -->
+                <div class="text-center h-full flex flex-col">
+                    <div class="w-16 h-16 bg-echoLight rounded-full flex items-center justify-center mx-auto mb-6 text-echoGreen">
+                        <i class="fas fa-eye text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-echoGreen mb-4">Self-awareness</h3>
+                    <p class="text-gray-700 italic mb-2">Lead with clarity.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
+                        Understanding yourself to make better decisions, communicate more effectively, and respond rather than react.
+                    </p>
+                    <div class="mt-auto pt-4 border-t border-gray-100">
+                        <p class="text-echoGreen font-bold text-xs uppercase mb-1">Self-awareness as a leadership advantage</p>
+                        <p class="text-echoOrange text-sm font-semibold">Better judgment. Better relationships. Better outcomes.</p>
+                    </div>
+                </div>
+                <!-- Value 2 -->
+                <div class="text-center h-full flex flex-col">
+                    <div class="w-16 h-16 bg-echoLight rounded-full flex items-center justify-center mx-auto mb-6 text-echoGreen">
+                        <i class="fas fa-heart text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-echoGreen mb-4">Courageous authenticity</h3>
+                    <p class="text-gray-700 italic mb-2">Credible, aligned leadership.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
+                        Not vague “be yourself” messaging. Owning your strengths, acknowledging your limits, and building trust through honesty and consistency.
+                    </p>
+                    <div class="mt-auto pt-4 border-t border-gray-100">
+                         <p class="text-echoGreen font-bold text-xs uppercase mb-1">Trust-building leadership</p>
+                         <p class="text-echoOrange text-sm font-semibold">Consistency between intention and action.</p>
+                    </div>
+                </div>
+                <!-- Value 3 -->
+                <div class="text-center h-full flex flex-col">
+                    <div class="w-16 h-16 bg-echoLight rounded-full flex items-center justify-center mx-auto mb-6 text-echoGreen">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-echoGreen mb-4">Sustainable performance</h3>
+                    <p class="text-gray-700 italic mb-2">Performance that holds over time.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
+                        Not short-lived peaks followed by burnout. Leaders who deliver results without exhausting themselves or their teams.
+                    </p>
+                    <div class="mt-auto pt-4 border-t border-gray-100">
+                        <p class="text-echoGreen font-bold text-xs uppercase mb-1">Sustainable performance</p>
+                        <p class="text-echoOrange text-sm font-semibold">Long-term impact over short-term fixes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: About Echo Coaching -->
+    <section id="about-echo" class="py-20 bg-echoLight">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center gap-12">
-                <!-- Image Column -->
+                <!-- Image -->
                 <div class="w-full md:w-1/2">
+                    <img src="About Echo Coaching.png" alt="About Echo Coaching" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                </div>
+                <!-- Text -->
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold text-echoGreen mb-6">About Echo Coaching</h2>
+                    <p class="text-gray-700 mb-4 font-medium">
+                        Echo Coaching supports leadership at every level of the organization. Because leadership is not a title. It’s the way people think, decide, influence, and take responsibility in complex environments.
+                    </p>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        We work with individual contributors, managers, and executives who want to lead with clarity, whether they are navigating growth, pressure, change, or increased responsibility. Our approach focuses on self-awareness, aligned action, and sustainable performance.
+                    </p>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        Through coaching, facilitation, and speaking, we design leadership experiences grounded in real organizational realities. We help people move beyond theory to develop the capacity to lead themselves, work effectively with others, and create impact that lasts.
+                    </p>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        We don’t offer generic programs or one-size-fits-all solutions. Every engagement is shaped by context, goals, and the human dynamics at play.
+                    </p>
+                    <div class="border-l-4 border-echoOrange pl-4 text-echoGreen font-semibold italic mt-6">
+                        Echo Coaching exists to support leadership that is clear, credible, and human. Not as a role to perform, but as a daily practice.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Services -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-echoGreen mb-4">Our Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    At Echo Coaching, our services are built around three pathways to leadership growth. Each one is designed to create clarity, support aligned action, and build performance that lasts, no matter your role or level of responsibility.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 overflow-hidden">
+                        <img src="Coaching.png" alt="Coaching" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-echoGreen mb-2">Coaching</h3>
+                        <p class="text-echoOrange text-sm font-medium mb-4">Personalized support to navigate complexity with clarity.</p>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+                            Our one-on-one coaching offers a confidential space to reflect, challenge patterns, and move forward with intention. Whether you are stepping into leadership, managing pressure, navigating change, or redefining your direction, coaching adapts to your reality and goals.
+                        </p>
+                        <p class="text-xs text-gray-500 italic mt-auto">The focus is not on quick fixes, but on building self-awareness, confidence, and leadership capacity that holds over time.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 overflow-hidden">
+                        <img src="Workshops.png" alt="Workshops" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-echoGreen mb-2">Workshops & Leadership Programs</h3>
+                        <p class="text-echoOrange text-sm font-medium mb-4">Collective learning grounded in real organizational realities.</p>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+                            Our workshops and leadership programs are designed to build awareness, strengthen essential leadership skills, and improve how people work together. Through interactive and practical experiences, participants explore new ways of thinking, communicating, and leading in complex environments.
+                        </p>
+                        <p class="text-xs text-gray-500 italic mt-auto">From foundational leadership capabilities to team alignment and change navigation, our programs create shared language and actionable insight that teams can apply immediately.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 overflow-hidden">
+                        <img src="Keynotes.png" alt="Keynotes" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-echoGreen mb-2">Keynotes & Talks</h3>
+                        <p class="text-echoOrange text-sm font-medium mb-4">Insightful, engaging conversations that shift perspective.</p>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+                            Our keynotes and talks are designed to spark reflection, challenge assumptions, and open meaningful conversations about leadership and performance. Rooted in real-world experience, they balance inspiration with practical insight.
+                        </p>
+                        <p class="text-xs text-gray-500 italic mt-auto">Whether for conferences, leadership events, or team gatherings, these sessions leave audiences with ideas they can translate into action long after the talk ends.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Why Choose Echo -->
+    <section id="why-echo" class="py-20 bg-echoGreen text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose Echo Coaching?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition">
+                    <h3 class="text-lg font-bold text-echoYellow mb-2">Clarity before action</h3>
+                    <p class="text-sm opacity-90">Leadership development starts with self-awareness. Whether through coaching, workshops, or talks, we help leaders gain clarity on how they think, decide, and show up under pressure.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition">
+                    <h3 class="text-lg font-bold text-echoYellow mb-2">Grounded in real organizational complexity</h3>
+                    <p class="text-sm opacity-90">No generic leadership content. Our work is rooted in real corporate environments, informed by years of HR and leadership experience.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition">
+                    <h3 class="text-lg font-bold text-echoYellow mb-2">Sustainable performance</h3>
+                    <p class="text-sm opacity-90">We design experiences that support long-term performance. Not one-off inspiration, but shifts that stick beyond the session.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition">
+                    <h3 class="text-lg font-bold text-echoYellow mb-2">Authentic leadership, without the fluff</h3>
+                    <p class="text-sm opacity-90">Authenticity as a leadership skill. Practical, grounded, and directly connected to trust, influence, and impact.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition">
+                    <h3 class="text-lg font-bold text-echoYellow mb-2">Human-centered, business-aware</h3>
+                    <p class="text-sm opacity-90">People are not separate from performance. We integrate human dynamics with business realities, without over-intellectualizing or oversimplifying.</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition">
+                    <h3 class="text-lg font-bold text-echoYellow mb-2">One approach, multiple formats</h3>
+                    <p class="text-sm opacity-90">Coaching, facilitation, and speaking grounded in the same philosophy. Different formats. Same depth. Same rigor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: Meet Christine -->
+    <section id="christine" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row-reverse items-start gap-12">
+                <!-- Image Column -->
+                <div class="w-full md:w-1/3">
                     <div class="relative">
-                        <div class="absolute inset-0 bg-echoYellow rounded-lg transform translate-x-3 translate-y-3"></div>
-                        <!-- Christine Headshot -->
-                        <img src="christine.jpg" alt="Christine - Echo Coaching" class="relative rounded-lg shadow-xl w-full h-auto object-cover grayscale hover:grayscale-0 transition duration-500">
+                        <div class="absolute inset-0 bg-echoTerracotta rounded-lg transform translate-x-3 translate-y-3"></div>
+                        <!-- Using christine.jpg headshot here -->
+                        <img src="christine.jpg" alt="Christine - Echo Coaching Founder" class="relative rounded-lg shadow-xl w-full h-auto object-cover grayscale hover:grayscale-0 transition duration-500">
                     </div>
                 </div>
                 <!-- Text Column -->
-                <div class="w-full md:w-1/2">
-                    <h4 class="text-echoOrange font-bold tracking-widest uppercase mb-2">About Me</h4>
-                    <h2 class="text-3xl md:text-4xl font-bold text-echoGreen mb-6">Bonjour! I'm Christine.</h2>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-3xl md:text-4xl font-bold text-echoGreen mb-6">Meet Christine</h2>
                     <p class="text-gray-600 mb-4 leading-relaxed">
-                        I am an HR professional with over 20 years of experience navigating the modern corporate world, particularly within the entertainment industry. My journey has been shaped by my steadfast belief that employees are more than just numbers—they are individuals with unique needs, aspirations, and talents.
+                        Christine is the founder of Echo Coaching and an HR professional with over 20 years of experience navigating complex, fast-paced corporate environments, particularly in the entertainment industry.
+                    </p>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Throughout her career, she has worked closely with individual contributors, managers, and executives, witnessing firsthand how leadership decisions shape culture, performance, and engagement. This experience led to a clear conviction: leadership is not about control or perfection, but about clarity, responsibility, and the ability to navigate human complexity with integrity.
+                    </p>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Christine chose to dedicate the second half of her career to coaching leaders who want to show up differently at work. Her approach is grounded in self-awareness, aligned action, and sustainable performance, helping people lead themselves and others with greater clarity and credibility.
                     </p>
                     <p class="text-gray-600 mb-6 leading-relaxed">
-                        Sadly, authentic leadership and empathy are often missing in today’s corporate environment. This gap has driven my passion for corporate coaching. My mission is simple yet profound: to transform the corporate world one human at a time.
+                        She creates coaching, facilitation, and speaking experiences that are structured, human, and challenging. Spaces where growth is supported without being softened, and where leadership capacity is built to hold under real pressure.
                     </p>
-                    <div class="border-l-4 border-echoYellow pl-4 italic text-gray-700">
-                        "When leaders genuinely care for their people, the entire organization thrives."
+                    <div class="text-sm font-semibold text-echoOrange">
+                        Christine is an Associate Certified Coach (ACC) accredited by the International Coaching Federation (ICF), reflecting her commitment to globally recognized standards of professional coaching excellence.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Values / Approach Strip -->
-    <section class="bg-echoLight py-16">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-6">
-                    <i class="fas fa-heart text-4xl text-echoGreen mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Empathy</h3>
-                    <p class="text-gray-600">Creating a workplace where everyone feels valued and heard.</p>
+    <!-- SECTION 7: Credentials -->
+    <section id="credentials" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-echoGreen text-center mb-16">Credentials & Certifications</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Credential 1 -->
+                <div class="flex flex-col items-center text-center p-4">
+                    <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-md mb-4 overflow-hidden p-2">
+                        <img src="ACC Badge.png" alt="ACC Badge" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="font-bold text-gray-800">Associate Certified Coach</h3>
+                    <p class="text-echoOrange text-sm">International Coaching Federation</p>
                 </div>
-                <div class="p-6">
-                    <i class="fas fa-fingerprint text-4xl text-echoGreen mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Authenticity</h3>
-                    <p class="text-gray-600">Leadership that feels real and relational, not performative.</p>
+                 <!-- Credential 2 -->
+                 <div class="flex flex-col items-center text-center p-4">
+                    <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-md mb-4 overflow-hidden p-2">
+                        <img src="LCP Badge.png" alt="LCP Badge" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="font-bold text-gray-800">Leadership Circle Profile Certified Practitioner</h3>
+                    <p class="text-echoOrange text-sm">Leadership Circle</p>
                 </div>
-                <div class="p-6">
-                    <i class="fas fa-users text-4xl text-echoGreen mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Human Connection</h3>
-                    <p class="text-gray-600">Driving success through genuine relationships.</p>
+                 <!-- Credential 3 -->
+                 <div class="flex flex-col items-center text-center p-4">
+                    <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-md mb-4 overflow-hidden p-2">
+                        <img src="EQ-I.jpg" alt="EQ-I Badge" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="font-bold text-gray-800">EQ-i 2.0 Certified Practitioner</h3>
+                    <p class="text-echoOrange text-sm">The Emotional Intelligence Training Company</p>
                 </div>
             </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                 <!-- Credential 4 -->
+                 <div class="flex flex-col items-center text-center p-4">
+                    <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-md mb-4 overflow-hidden p-2">
+                        <img src="Mosaik Edgenda.png" alt="Mosaik" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="font-bold text-gray-800">Fundamentals of Coaching</h3>
+                    <p class="text-echoOrange text-sm">International Mosaïk + Edgenda</p>
+                </div>
+                 <!-- Credential 5 -->
+                 <div class="flex flex-col items-center text-center p-4">
+                    <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-md mb-4 overflow-hidden p-2">
+                        <img src="ICI.png" alt="ICI Badge" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="font-bold text-gray-800">Neuro-Linguistic Programming (NLP) Practitioner</h3>
+                    <p class="text-echoOrange text-sm">Institut Coaching International</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-echoGreen mb-4">Why Choose Echo Coaching?</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">We understand that effective leadership and personal growth require a personalized approach. Our suite of coaching packages is designed to meet your unique needs.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-echoGreen hover:-translate-y-2 transition duration-300">
-                    <h3 class="text-xl font-bold text-echoGreen mb-3">Customized Solutions</h3>
-                    <p class="text-gray-600 text-sm">One size does not fit all. Our packages are meticulously tailored to address the unique needs of various roles, from executives to individual contributors.</p>
-                </div>
-                <!-- Card 2 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-echoOrange hover:-translate-y-2 transition duration-300">
-                    <h3 class="text-xl font-bold text-echoGreen mb-3">Personalized Approach</h3>
-                    <p class="text-gray-600 text-sm">Grounded in understanding your unique challenges and aspirations, providing personalized strategies and actionable feedback.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-echoYellow hover:-translate-y-2 transition duration-300">
-                    <h3 class="text-xl font-bold text-echoGreen mb-3">Comprehensive Focus</h3>
-                    <p class="text-gray-600 text-sm">Covering a broad spectrum—from strategic thinking and leadership skills to personal development and career advancement.</p>
-                </div>
-                <!-- Card 4 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-echoGreen hover:-translate-y-2 transition duration-300">
-                    <h3 class="text-xl font-bold text-echoGreen mb-3">Flexible Formats</h3>
-                    <p class="text-gray-600 text-sm">Virtual and in-person coaching options available, allowing us to deliver impactful experiences that fit your busy schedule.</p>
-                </div>
-                 <!-- Card 5 -->
-                 <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-echoOrange hover:-translate-y-2 transition duration-300">
-                    <h3 class="text-xl font-bold text-echoGreen mb-3">Results-Driven</h3>
-                    <p class="text-gray-600 text-sm">Focused on measurable improvements in leadership effectiveness, team cohesion, and personal development.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quiz CTA Section -->
-    <section id="quiz" class="py-16 bg-echoTerracotta text-white relative overflow-hidden">
-        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-            <h2 class="text-3xl font-bold mb-4">What kind of leader are you?</h2>
-            <p class="mb-8 text-lg opacity-90">Take our quick leadership assessment to discover your strengths and areas for growth. It only takes 2 minutes.</p>
-            <button onclick="alert('In Google Sites, you would embed the Google Form here!')" class="bg-white text-echoTerracotta font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
-                Take the Assessment
+    <!-- SECTION 8: Quiz Teaser -->
+    <section id="quiz" class="py-16 bg-echoTerracotta text-white relative">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Leadership Quiz</h2>
+            <p class="mb-8 text-lg opacity-90">What kind of leader are you? Take our quick assessment to discover your strengths and areas for growth.</p>
+            <button onclick="alert('Link to Google Form/Quiz goes here')" class="bg-white text-echoTerracotta font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
+                Coming Soon
             </button>
         </div>
     </section>
 
-    <!-- Credentials Section -->
-    <section id="credentials" class="py-20 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-echoGreen text-center mb-12">Credentials & Certifications</h2>
-            <div class="space-y-6">
-                <!-- Item -->
-                <div class="flex flex-col md:flex-row items-start md:items-center bg-white p-6 rounded-lg shadow-sm">
-                    <div class="bg-echoGreen text-white rounded-full h-12 w-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">20</div>
-                    <div>
-                        <h3 class="font-bold text-lg text-gray-800">PNL Certified Practitioner</h3>
-                        <p class="text-echoOrange text-sm">International Coaching Institute - 2020</p>
-                    </div>
-                </div>
-                <!-- Item -->
-                <div class="flex flex-col md:flex-row items-start md:items-center bg-white p-6 rounded-lg shadow-sm">
-                    <div class="bg-echoGreen text-white rounded-full h-12 w-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">21</div>
-                    <div>
-                        <h3 class="font-bold text-lg text-gray-800">Fundamentals of Coaching</h3>
-                        <p class="text-echoOrange text-sm">Mosaïk Coaching by Edgenda - 2021</p>
-                    </div>
-                </div>
-                <!-- Item -->
-                <div class="flex flex-col md:flex-row items-start md:items-center bg-white p-6 rounded-lg shadow-sm">
-                    <div class="bg-echoGreen text-white rounded-full h-12 w-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">23</div>
-                    <div>
-                        <h3 class="font-bold text-lg text-gray-800">EQ-i 2.0 Certified Practitioner</h3>
-                        <p class="text-echoOrange text-sm">The Emotional Intelligence Training Company - 2023</p>
-                    </div>
-                </div>
-                 <!-- Item -->
-                 <div class="flex flex-col md:flex-row items-start md:items-center bg-white p-6 rounded-lg shadow-sm">
-                    <div class="bg-echoGreen text-white rounded-full h-12 w-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">24</div>
-                    <div>
-                        <h3 class="font-bold text-lg text-gray-800">Leadership Circle Profile Certified Practitioner</h3>
-                        <p class="text-echoOrange text-sm">Leadership Circle - 2024</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact / Newsletter Section -->
+    <!-- SECTION 9: Contact / Newsletter -->
     <section id="contact" class="py-20 bg-echoGreen text-white">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
                 <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
-                <p class="mb-6 opacity-80">Whether you are ready to start your journey or just have a few questions, I'd love to hear from you. Reach out directly or book a session.</p>
+                <p class="mb-6 opacity-80">Whether you are ready to start your journey or just have a few questions, I'd love to hear from you.</p>
                 <div class="flex flex-col space-y-4">
                     <a href="mailto:christine@echocoaching.ca" class="inline-flex items-center text-echoYellow hover:text-white transition">
                         <i class="fas fa-envelope w-8"></i> christine@echocoaching.ca
@@ -253,8 +395,12 @@
                 
                 <div class="mt-12 p-6 border border-white border-opacity-20 rounded-lg">
                      <h3 class="font-bold text-lg mb-2 text-echoYellow">Newsletter</h3>
-                     <p class="text-sm opacity-80 mb-4">Join our community for leadership tips.</p>
-                     <button onclick="window.location.href='#quiz'" class="text-sm underline hover:text-echoYellow">Take the quiz to subscribe</button>
+                     <p class="text-sm opacity-90 mb-2 font-medium">Thoughtful leadership insights for real-world complexity.</p>
+                     <p class="text-xs opacity-75 mb-4">Get occasional reflections and tools to support clarity, decision-making, and sustainable performance.</p>
+                     <!-- Newsletter Form embedded in Netlify form logic or separate -->
+                     <button onclick="document.querySelector('form[name=contact] input[name=message]').value = 'Please subscribe me to the newsletter!'" class="bg-echoYellow text-echoGreen px-4 py-2 rounded text-sm font-bold hover:bg-white transition">
+                        Subscribe
+                     </button>
                 </div>
             </div>
             
@@ -263,16 +409,15 @@
                 
                 <!-- Netlify Form Setup -->
                 <form name="contact" method="POST" data-netlify="true" class="flex flex-col gap-4">
-                    <!-- Hidden input required for Netlify to identify the form -->
                     <input type="hidden" name="form-name" value="contact" />
                     
                     <div>
                         <label class="block text-sm font-medium mb-1 opacity-90">Name</label>
-                        <input type="text" name="name" placeholder="Jane Doe" class="w-full p-3 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-echoYellow bg-white" required>
+                        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-echoYellow bg-white" required>
                     </div>
                     <div>
                         <label class="block text-sm font-medium mb-1 opacity-90">Email</label>
-                        <input type="email" name="email" placeholder="jane@example.com" class="w-full p-3 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-echoYellow bg-white" required>
+                        <input type="email" name="email" placeholder="you@example.com" class="w-full p-3 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-echoYellow bg-white" required>
                     </div>
                     <div>
                         <label class="block text-sm font-medium mb-1 opacity-90">Message</label>
