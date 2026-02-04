@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Coaching | Transformer le leadership</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        echoGreen: '#003822',
+                        echoYellow: '#DEA33F',
+                        echoTerracotta: '#BA560D',
+                        echoOrange: '#CF7A23',
+                        echoLight: '#F3F4F6'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-echoGreen text-white fixed w-full z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo Area -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#home" class="cursor-pointer">
+                        <img src="logo.png" alt="Echo Coaching" class="h-12 w-auto hover:opacity-80 transition duration-300">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-6 items-center text-sm font-medium">
+  		  <a href="#about-echo" class="hover:text-echoYellow transition duration-300">À propos</a>
+ 		  <a href="#services" class="hover:text-echoYellow transition duration-300">Services</a>
+                  <a href="#why-echo" class="hover:text-echoYellow transition duration-300">Pourquoi Echo Coaching</a>
+    		  <a href="#christine" class="hover:text-echoYellow transition duration-300">À propos de Christine</a>
+    		  <a href="#credentials" class="hover:text-echoYellow transition duration-300">Accréditations</a>
+     		  <!-- The Language Toggle -->
+   		  <a href="index.html" class="hover:text-echoYellow transition duration-300 font-bold">EN</a>
+    		  <!-- The Button -->
+    		  <a href="https://calendar.app.google/SENwPsYChamWrrHQ7" target="_blank" class="bg-echoOrange hover:bg-echoTerracotta text-white px-5 py-2 rounded-full transition duration-300 shadow-md">Planifie ton appel découverte</a>
+</div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-echoYellow focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-echoGreen pb-4 px-4">
+   	 <a href="#about-echo" class="block py-2 hover:text-echoYellow">À propos</a>
+   	 <a href="#services" class="block py-2 hover:text-echoYellow">Services</a>
+    	 <a href="#why-echo" class="block py-2 hover:text-echoYellow">Pourquoi Echo Coaching</a>
+   	 <a href="#christine" class="block py-2 hover:text-echoYellow">À propos de Christine</a>
+   	 <a href="#credentials" class="block py-2 hover:text-echoYellow">Accréditations</a>
+   	 <!-- The Language Toggle -->
+   	 <a href="index.html" class="hover:text-echoYellow transition duration-300 font-bold">EN</a>
+   	 <!-- The Button -->
+   	 <a href="https://calendar.app.google/SENwPsYChamWrrHQ7" target="_blank" class="block py-2 mt-2 bg-echoOrange text-center rounded text-white">Planifie ton appel découverte</a>
+</div>
+    </nav>
+
+    <!-- SECTION 1: Welcome Banner -->
+    <header id="home" class="relative bg-echoGreen h-screen flex items-center justify-center text-center px-4" style="background: linear-gradient(rgba(0, 56, 34, 0.85), rgba(0, 56, 34, 0.75)), url('Welcome Banner.png'); background-size: cover; background-position: center;">
+        <div class="max-w-4xl mx-auto text-white pt-16">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">TRANSFORMER LE LEADERSHIP, DE L’INTÉRIEUR VERS L’EXTÉRIEUR</h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-100 font-light tracking-wide">
+                La conscience de soi au service d’un leadership bien réel
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3tBNETv7F7pm-2UKInEOM5-cAtJJyBf76xtgJR4RB642v_u9b7PqlX3wvotH3nKoMl8W6Mtns8" target="_blank" class="bg-echoOrange hover:bg-echoTerracotta text-white text-lg px-8 py-3 rounded-full font-semibold transition duration-300 shadow-lg transform hover:-translate-y-1">
+                    Planifie ton appel découverte
+                </a>
+                <a href="#about-echo" class="border-2 border-white hover:bg-white hover:text-echoGreen text-white text-lg px-8 py-3 rounded-full font-semibold transition duration-300">
+                    En savoir plus
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 3: About Echo Coaching -->
+    <section id="about-echo" class="py-20 bg-echoLight">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Image -->
+                <div class="w-full md:w-1/2">
+                    <img src="About Echo Coaching.png" alt="About Echo Coaching" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                </div>
+                <!-- Text -->
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold text-echoGreen mb-6">À propos d’Echo Coaching</h2>
+                    <p class="text-gray-700 mb-4 font-medium">
+                        Echo Coaching accompagne le leadership à tous les niveaux de l’organisation. Parce que le leadership n’est pas un titre. C’est une posture. Une façon de penser, de décider, d’influencer et de prendre ses responsabilités dans des environnements complexes.
+                    </p>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        Nous accompagnons des professionnel·les, des gestionnaires et des dirigeant·es qui souhaitent exercer un leadership plus clair, qu’ils traversent une phase de croissance, de pression, de changement ou une prise de responsabilités accrue. Notre approche repose sur la conscience de soi, l’action alignée et une performance durable.
+                    </p>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        À travers le coaching, la facilitation et les conférences, nous concevons des expériences de leadership ancrées dans la réalité du terrain. L’objectif: dépasser la théorie pour développer la capacité de se diriger soi-même, de collaborer efficacement et de créer un impact qui dure.
+                    </p>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        Nous ne proposons ni programmes génériques ni solutions toutes faites. Chaque accompagnement est pensé en fonction du contexte, des objectifs et des dynamiques humaines en jeu.
+                    </p>
+                    <div class="border-l-4 border-echoOrange pl-4 text-echoGreen font-semibold italic mt-6">
+                        Echo Coaching soutient un leadership clair, crédible et humain. Non pas comme un rôle à jouer, mais comme une pratique quotidienne.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Values -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-echoGreen uppercase tracking-wider">Nos principes de leadership</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Value 1 -->
+                <div class="text-center h-full flex flex-col">
+                    <div class="w-16 h-16 bg-echoLight rounded-full flex items-center justify-center mx-auto mb-6 text-echoGreen">
+                        <i class="fas fa-eye text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-echoGreen mb-4">Conscience de soi</h3>
+                    <p class="text-gray-700 italic mb-2">Clarté avant l’action.</p>
+                </div>
+                <!-- Value 2 -->
+                <div class="text-center h-full flex flex-col">
+                    <div class="w-16 h-16 bg-echoLight rounded-full flex items-center justify-center mx-auto mb-6 text-echoGreen">
+                        <i class="fas fa-heart text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-echoGreen mb-4">Authenticité</h3>
+                    <p class="text-gray-700 italic mb-2">Cohérence entre intention et action.</p>
+                </div>
+                <!-- Value 3 -->
+                <div class="text-center h-full flex flex-col">
+                    <div class="w-16 h-16 bg-echoLight rounded-full flex items-center justify-center mx-auto mb-6 text-echoGreen">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-echoGreen mb-4">Responsabilisation</h3>
+                    <p class="text-gray-700 italic mb-2">Assumer pleinement, sans blâme.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- SECTION 5: Built for sustainable performance -->
+<section class="py-20 bg-echoLight">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-echoGreen mb-8 uppercase tracking-wider">Pensé pour une performance durable</h2>
+            <div class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                <p>
+                    Quand les leaders développent leur conscience de soi, pratiquent un leadership authentique et assument clairement leurs responsabilités, la performance ne dépend plus de la pression constante ni de solutions à court terme. Elle devient plus stable, plus cohérente et surtout plus durable dans le temps.
+                </p>
+                <p>
+                    Les équipes prennent de meilleures décisions, la collaboration s’améliore et les leaders peuvent livrer des résultats sans tout porter sur leurs épaules. Le résultat: une performance qui tient, même lorsque le contexte est complexe et les exigences élevées.
+                </p>
+                <p class="font-semibold text-echoGreen">
+                    C’est ainsi que le leadership devient un véritable levier d’affaires.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Services -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-echoGreen mb-4">Nos services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Chez Echo Coaching, nos services s’articulent autour de trois parcours de développement du leadership. Chacun est conçu pour créer de la clarté, soutenir une action alignée et bâtir une performance durable, peu importe ton rôle ou ton niveau de responsabilités.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 overflow-hidden">
+                        <img src="Coaching.png" alt="Coaching" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-echoGreen mb-2">Coaching</h3>
+                        <p class="text-echoOrange text-sm font-medium mb-4">Un accompagnement personnalisé pour naviguer la complexité avec clarté.</p>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+                            Le coaching individuel offre un espace confidentiel pour prendre du recul, questionner ses réflexes et avancer avec intention. Que tu entres dans un rôle de leadership, gères une pression accrue, traverses un changement ou redéfinisses ta direction, l’accompagnement s’adapte à ta réalité et à tes objectifs. L’enjeu n’est pas de trouver des solutions rapides, mais de développer la conscience de soi, la confiance et la capacité de leadership nécessaires pour tenir dans le temps.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 overflow-hidden">
+                        <img src="Workshops.png" alt="Workshops" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-echoGreen mb-2">Ateliers et programmes de leadership</h3>
+                        <p class="text-echoOrange text-sm font-medium mb-4">Des apprentissages collectifs ancrés dans la réalité organisationnelle.</p>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+                            Nos ateliers et programmes de leadership sont conçus pour développer la conscience, renforcer les compétences clés en leadership et améliorer la façon dont les équipes travaillent ensemble. À travers des expériences interactives et concrètes, les participant·es explorent de nouvelles façons de penser, de communiquer et de diriger dans des contextes complexes. Des bases du leadership à l’alignement d’équipe et à la navigation du changement, nos programmes créent un langage commun et des pistes d’action applicables immédiatement sur le terrain.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+                    <div class="h-48 overflow-hidden">
+                        <img src="Keynotes.png" alt="Keynotes" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-echoGreen mb-2">Conférences</h3>
+                        <p class="text-echoOrange text-sm font-medium mb-4">Des échanges inspirants qui changent les perspectives.</p>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+                            Nos conférences sont conçues pour susciter la réflexion, questionner les évidences et ouvrir des conversations porteuses sur le leadership et la performance. Ancrées dans l’expérience terrain, elles trouvent l’équilibre entre inspiration et pistes concrètes. Que ce soit dans le cadre de conférences, d’événements de leadership ou de rencontres d’équipe, ces interventions laissent aux participant·es des idées qu’ils peuvent transformer en action, bien après la fin de la discussion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Why Choose Echo -->
+    <section id="why-echo" class="py-20 bg-echoGreen text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Pourquoi choisir Echo Coaching?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition">
+                    <h3 class="text-lg font-bold text-echoYellow mb-2">La clarté avant l’action</h3>
+                    <p class="text-sm opacity-90">Le développement du leadership commence par la conscience de soi. Que ce soit en coaching, en atelier ou en conférence, nous aidons les leaders à clarifier leur façon de penser, de décider et de se positionner sous pression.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition">
+                    <h3 class="text-lg font-bold text-echoYellow mb-2">Ancré dans la complexité organisationnelle</h3>
+                    <p class="text-sm opacity-90">Aucun contenu générique. Notre travail s’appuie sur des environnements corporatifs réels, nourri par des années d’expérience en RH et en leadership.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition">
+                    <h3 class="text-lg font-bold text-echoYellow mb-2">Une performance durable</h3>
+                    <p class="text-sm opacity-90">Nous concevons des expériences qui soutiennent la performance dans le temps. Pas de motivation éphémère, mais des changements qui tiennent bien après la rencontre.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition">
+                    <h3 class="text-lg font-bold text-echoYellow mb-2">Un leadership authentique, sans flafla</h3>
+                    <p class="text-sm opacity-90">Un leadership cohérent, crédible, pratiqué dans des conditions réelles. Pas performatif. Pas scripté. Construit par la clarté, l’alignement et la responsabilité. <br>
+                        <br>Non pas théâtral. Non scénarisé. Construit grâce à la clarté, la cohérence et la responsabilité.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition">
+                    <h3 class="text-lg font-bold text-echoYellow mb-2">Humain et orienté affaires</h3>
+                    <p class="text-sm opacity-90">Les personnes ne sont pas séparées de la performance. Nous intégrons les dynamiques humaines aux réalités d’affaires, sans surintellectualiser ni simplifier à l’excès.</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition">
+                    <h3 class="text-lg font-bold text-echoYellow mb-2">Une approche, plusieurs formats</h3>
+                    <p class="text-sm opacity-90">Une approche cohérente déployée en coaching, en facilitation et en conférences. Des formats différents, avec le même niveau de profondeur, de structure et de responsabilité. 
+                        <br>
+                        <br>Des formats différents, mais un même niveau de profondeur, de structure et de responsabilité. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: Meet Christine -->
+    <section id="christine" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row-reverse items-start gap-12">
+                <!-- Image Column -->
+                <div class="w-full md:w-1/3">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-echoTerracotta rounded-lg transform translate-x-3 translate-y-3"></div>
+                        <!-- Using christine.jpg headshot here -->
+                        <img src="christine.jpg" alt="Christine - Echo Coaching Founder" class="relative rounded-lg shadow-xl w-full h-auto object-cover grayscale hover:grayscale-0 transition duration-500">
+                    </div>
+                </div>
+                <!-- Text Column -->
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-3xl md:text-4xl font-bold text-echoGreen mb-6">À propos de Christine</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Christine est la fondatrice d’Echo Coaching et une professionnelle RH comptant plus de 20 ans d’expérience en environnements corporatifs complexes et exigeants, notamment dans l’industrie du divertissement.
+                    </p>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Tout au long de son parcours, elle a travaillé de près avec des contributeur·rices individuel·les, des gestionnaires et des dirigeant·es. Elle a observé de première main comment les décisions de leadership influencent la culture, la performance et l’engagement. Cette expérience a forgé une conviction claire: le leadership ne repose ni sur le contrôle ni sur la perfection, mais sur la clarté, la responsabilité et la capacité à naviguer la complexité humaine avec intégrité.
+                    </p>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Christine a choisi de consacrer la deuxième moitié de sa carrière au coaching de leaders qui souhaitent se positionner autrement au travail. Son approche est ancrée dans la conscience de soi, l’action alignée et la performance durable. Elle aide les personnes à se diriger elles-mêmes et à exercer leur leadership avec plus de clarté et de crédibilité.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Elle conçoit des expériences de coaching, de facilitation et de prise de parole structurées, humaines et exigeantes. Des espaces où la croissance est soutenue sans être édulcorée, et où la capacité de leadership est développée pour tenir sous une réelle pression.
+                    </p>
+                    <div class="text-sm font-semibold text-echoOrange">
+                        Christine est coach certifiée ACC (Associate Certified Coach) par la fédération de coaching international (ICF), témoignant de son engagement envers des standards reconnus de pratique professionnelle du coaching.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: Credentials -->
+    <section id="credentials" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-echoGreen text-center mb-16">Accréditations et certifications</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Credential 1 -->
+                <div class="flex flex-col items-center text-center p-4">
+                    <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-md mb-4 overflow-hidden p-2">
+                        <img src="ACC Badge.png" alt="ACC Badge" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="font-bold text-gray-800">Coach certifiée ACC (Associate Certified Coach)</h3>
+                    <p class="text-echoOrange text-sm">Fédération international de Coaching Federation (ICF)</p>
+                </div>
+                 <!-- Credential 2 -->
+                 <div class="flex flex-col items-center text-center p-4">
+                    <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-md mb-4 overflow-hidden p-2">
+                        <img src="LCP Badge.png" alt="LCP Badge" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="font-bold text-gray-800">Praticienne certifiée Leadership Circle Profile</h3>
+                    <p class="text-echoOrange text-sm">Leadership Circle</p>
+                </div>
+                 <!-- Credential 3 -->
+                 <div class="flex flex-col items-center text-center p-4">
+                    <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-md mb-4 overflow-hidden p-2">
+                        <img src="EQ-I.jpg" alt="EQ-I Badge" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="font-bold text-gray-800">Praticienne certifiée EQ-i 2.0</h3>
+                    <p class="text-echoOrange text-sm">The Emotional Intelligence Training Company</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                 <!-- Credential 4 -->
+                 <div class="flex flex-col items-center text-center p-4">
+                    <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-md mb-4 overflow-hidden p-2">
+                        <img src="Mosaik Edgenda.png" alt="Mosaik" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="font-bold text-gray-800">Fondements du coaching</h3>
+                    <p class="text-echoOrange text-sm">International Mosaïk et Edgenda</p>
+                </div>
+                 <!-- Credential 5 -->
+                 <div class="flex flex-col items-center text-center p-4">
+                    <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-md mb-4 overflow-hidden p-2">
+                        <img src="ICI.png" alt="ICI Badge" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="font-bold text-gray-800">Praticienne en programmation neurolinguistique (PNL)</h3>
+                    <p class="text-echoOrange text-sm">Institut Coaching International</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 8: Quiz Teaser -->
+    <section id="quiz" class="py-16 bg-echoTerracotta text-white relative">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Quiz leadership</h2>
+            <p class="mb-8 text-lg opacity-90">Quel type de leader es-tu? Réponds à notre courte évaluation pour mieux comprendre tes forces et tes axes de développement.</p>
+            <button onclick="alert('Link to Google Form/Quiz goes here')" class="bg-white text-echoTerracotta font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
+                Bientôt disponible
+            </button>
+        </div>
+    </section>
+
+    <!-- SECTION 9: Contact / Newsletter -->
+    <section id="contact" class="py-20 bg-echoGreen text-white">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Entrer en contact</h2>
+                <p class="mb-6 opacity-80">Prêt·e à commencer ou simplement curieux·se d’en savoir plus? Écris-moi, la porte est ouverte..</p>
+                <div class="flex flex-col space-y-4">
+                    <a href="mailto:christine@echocoaching.ca" class="inline-flex items-center text-echoYellow hover:text-white transition">
+                        <i class="fas fa-envelope w-8"></i> christine@echocoaching.ca
+                    </a>
+                    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3tBNETv7F7pm-2UKInEOM5-cAtJJyBf76xtgJR4RB642v_u9b7PqlX3wvotH3nKoMl8W6Mtns8" target="_blank" class="inline-flex items-center text-echoYellow hover:text-white transition">
+                        <i class="fas fa-calendar-check w-8"></i> Planifie un appel découverte
+                    </a>
+                </div>
+                
+                <div class="mt-12 p-6 border border-white border-opacity-20 rounded-lg">
+                     <h3 class="font-bold text-lg mb-2 text-echoYellow">Infolettre</h3>
+                     <p class="text-sm opacity-90 mb-2 font-medium">Des réflexions sur le leadership, ancrées dans la complexité du réel.</p>
+                     <p class="text-xs opacity-75 mb-4">Reçois occasionnellement des idées et des outils pour soutenir la clarté, la prise de décision et une performance durable.</p>
+                     <!-- Newsletter Form embedded in Netlify form logic or separate -->
+                     <button onclick="document.querySelector('form[name=contact] input[name=message]').value = 'Please subscribe me to the newsletter!'" class="bg-echoYellow text-echoGreen px-4 py-2 rounded text-sm font-bold hover:bg-white transition">
+                        S’abonner
+                     </button>
+                </div>
+            </div>
+            
+            <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-blur-sm shadow-xl">
+                <h3 class="text-xl font-bold mb-6">Send a Message</h3>
+                
+                <!-- Netlify Form Setup -->
+                <form name="contact" method="POST" data-netlify="true" class="flex flex-col gap-4">
+                    <input type="hidden" name="form-name" value="contact" />
+                    
+                    <div>
+                        <label class="block text-sm font-medium mb-1 opacity-90">Name</label>
+                        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-echoYellow bg-white" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1 opacity-90">Email</label>
+                        <input type="email" name="email" placeholder="you@example.com" class="w-full p-3 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-echoYellow bg-white" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1 opacity-90">Message</label>
+                        <textarea name="message" rows="5" placeholder="How can we help you?" class="w-full p-3 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-echoYellow bg-white" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-echoOrange hover:bg-echoTerracotta text-white font-bold py-3 rounded transition duration-300 mt-2 shadow-md">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-400 py-6 text-center text-sm">
+        <p>&copy; 2026 Echo Coaching. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
